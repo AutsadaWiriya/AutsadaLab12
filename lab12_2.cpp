@@ -46,7 +46,7 @@ int main(){
 	srand(time(0));
 	int playerScore, yugiScore, playerAction, yugiAction;
 	int playerCards[3] = {drawCard(), drawCard(), 0};
-	int yugiCards[3];
+	int yugiCards[3] = {drawCard(), drawCard(), 0};
 	
 	cout << "---------ORE NO TURN, DRAW!!!------------\n";
 	cout << "Your cards: " << cardNames[playerCards[0]] << " " << cardNames[playerCards[1]] << "\n";
@@ -69,8 +69,6 @@ int main(){
 	//The following lines of code for Yugi's turn are not completed. Please correct it.
 	
 	cout << "---------YUGI'S TURN, DRAW!!!------------\n";
-	yugiCards[0] = drawCard();
-	yugiCards[1] = drawCard();
 	cout << "Yugi's cards: " << cardNames[yugiCards[0]] << " " << cardNames[yugiCards[1]]  << "\n";
 	yugiScore = calScore(yugiCards[0],yugiCards[1], 0);
 	cout << "Yugi's score: " << yugiScore << "\n";
